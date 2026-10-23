@@ -60,7 +60,7 @@ class ProfileCard extends StatelessWidget {
           ),
           boxShadow: [
             BoxShadow(
-              color: _rose.withOpacity(0.25),
+              color: _rose.withValues(alpha: 0.25),
               blurRadius: 36,
               offset: const Offset(0, 14),
             ),

@@ -86,7 +86,7 @@ class MenuPage extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: _espresso.withOpacity(0.3),
+                    color: _espresso.withValues(alpha: 0.3),
                     blurRadius: 20,
                     offset: const Offset(0, 8),
                   ),
@@ -100,7 +100,7 @@ class MenuPage extends StatelessWidget {
                     child: Icon(
                       Icons.local_cafe,
                       size: 170,
-                      color: Colors.white.withOpacity(0.10),
+                      color: Colors.white.withValues(alpha: 0.10),
                     ),
                   ),
                   const Positioned(
@@ -143,7 +143,7 @@ class MenuPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.15),
+                            color: Colors.black.withValues(alpha: 0.15),
                             blurRadius: 6,
                           ),
                         ],
@@ -181,7 +181,7 @@ class MenuPage extends StatelessWidget {
                     color: index == 0 ? _espresso : _cream,
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      color: index == 0 ? _espresso : _latte.withOpacity(0.5),
+                      color: index == 0 ? _espresso : _latte.withValues(alpha: 0.5),
                     ),
                   ),
                   child: Center(
@@ -236,10 +236,10 @@ class MenuCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFFFFFBF6),
         borderRadius: BorderRadius.circular(22),
-        border: Border.all(color: _latte.withOpacity(0.35)),
+        border: Border.all(color: _latte.withValues(alpha: 0.35)),
         boxShadow: [
           BoxShadow(
-            color: _espresso.withOpacity(0.08),
+            color: _espresso.withValues(alpha: 0.08),
             blurRadius: 14,
             offset: const Offset(0, 6),
           ),
@@ -256,7 +256,7 @@ class MenuCard extends StatelessWidget {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: _cream,
-                    border: Border.all(color: _latte.withOpacity(0.4)),
+                    border: Border.all(color: _latte.withValues(alpha: 0.4)),
                   ),
                   child: Icon(item.icon, size: 40, color: _mocha),
                 ),
